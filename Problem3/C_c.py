@@ -464,13 +464,13 @@ if __name__ == "__main__":
 
 
     # Feed tray number
-    feed_tray = 2
+    feed_tray = 5
     # Heat added or removed from the stage (kJ/h)
     Q = 0
     # Heat of feed (kJ/kmol)
     hF = 0
     # Number of stages
-    stages = 3
+    stages = 10
     # Operating pressure (atm)
     P = 1
     # Feed composition
@@ -484,7 +484,7 @@ if __name__ == "__main__":
     # Convergence tolerance
     tolerance = 1e-3
     # Maximum number of iterations
-    max_iterations = 10
+    max_iterations = 100
 
     # Create an instance of the distillation column
     distillation = Distillation()
