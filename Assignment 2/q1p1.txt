@@ -1,0 +1,412 @@
+************************************************************************************
+
+				INPUT SUMMARY
+
+************************************************************************************
+
+
+------------------------------------------------------------------------------------
+FLUID PACKAGE: Basis-1(Peng-Robinson)
+------------------------------------------------------------------------------------
+
+Property Package Type: PengRob
+Component List - 1: Benzene /Toluene /
+
+------------------------------------------------------------------------------------
+FLOWSHEET: Main
+------------------------------------------------------------------------------------
+
+
+Fluid Package: Basis-1
+
+UNIT OPERATION: E-100 (Heater)
+   Feed Stream = inlet
+   Product Stream = O
+   Energy Stream = E
+   Pressure Drop = 34.4737954 kPa
+   StepType = Equal Enthalpy
+
+
+STREAM: inlet (Material Stream)
+   Temperature = 21.1111111 C
+   Pressure = 310.264159 kPa
+   Mass Flow = 36287.3834 kg/h
+   Composition Basis (In Mole Fractions ):Benzene = 1/  Toluene = 0/  
+
+
+STREAM: E (Energy Stream)
+
+
+STREAM: O (Material Stream)
+   Temperature = 60 C
+
+
+
+
+################################################################################
+
+				OUTPUT SUMMARY
+
+################################################################################
+
+
+              INDIAN INSTITUTE OF TECH Case Name: question1.hsc                 
+              Bedford, MA                                                
+              USA               Unit Set: SI10                           
+                                                                         
+                                Date/Time: Wed Apr  9 00:16:51 2025      
+-------------------------------------------------------------------------------
+Basis-1 (Fluid Package): Component List
+-------------------------------------------------------------------------------
+Fluid Package: Basis-1                                                   
+                                                                         
+                                                                         
+COMPONENT LIST                                                           
+                                                                         
+Component List - 1 [HYSYS Databanks]                                     
+                                                                         
+COMPONENT        TYPE   MOLECULAR BOILING PT IDEAL LIQ       CRITICAL    
+                        WEIGHT     (C)        DENSITY (kg/m3)  TEMP (C)  
+Benzene          Pure   78.11     80.09      882.2           288.9       
+Toluene          Pure   92.14     110.6      870.0           318.6       
+(Continued..) Component List - 1 [HYSYS Databanks]                       
+                                                                         
+COMPONENT          CRITICAL PRES  CRITICAL VOL ACENTRICITY  HEAT OF FORM 
+                    (kPa)          (m3/kgmole)               (kJ/kgmole) 
+Benzene            4924           0.2600       0.2150       8.298e+004   
+Toluene            4100           0.3160       0.2596       5.003e+004   
+
+
+-------------------------------------------------------------------------------
+Template Case (Simulation Case): Mass and Energy Balance, Utility Balance, Process CO2 Emissions
+-------------------------------------------------------------------------------
+Simulation Case: Template Case                                           
+                                                                         
+                                                                         
+OVERALL MASS BALANCE                                                     
+                                                                         
+In Stream      Count Mass Flow      Out Stream      Count Mass Flow       
+                     (kg/h)                              (kg/h)          
+inlet          Yes  3.629e+004     O               Yes  3.629e+004       
+Total In MassFlow (kg/h) 3.629e+004 Total Out MassFlow (kg/h) 3.629e+004 
+Mass Imbalance (kg/h) 0.0000        Rel Mass Imbalance Pct (%) 0.00      
+OVERALL ENERGY BALANCE                                                   
+                                                                         
+InStream       Count Energy Flow     OutStream      Count Energy Flow     
+                     (kJ/h)                              (kJ/h)          
+inlet          Yes  2.310e+07       O              Yes  2.534e+07        
+E              Yes  2.242e+06                                            
+Total In EnergyFlow (kJ/h) 2.534e+007 Total Out EnergyFlow (kJ/h) 2.534e+007 
+Energy Imbalance (kJ/h) 0.0000      Rel Energy Imbalance Pct (%) 0.00    
+OVERALL UTILITY BALANCE                                                  
+                                                                         
+Utility Name         Usage Info  Energy Flow     Mass Flow     Cost      
+                                                                         
+Hot Utility Summary                Cold Utility Summary                  
+                                                                         
+Utility Flow ---                   Utility Flow ---                      
+Utility Cost ---                   Utility Cost ---                      
+Carbon Emiss. ---                  Carbon Emiss. ---                     
+Carbon Fees ---                    Carbon Fees ---                       
+PROCESS CO2 EMISSIONS                                                    
+                                                                         
+Inlet Stream    Count IPCC (1995) IPCC (2007) EPA (2009) IPCC (2016) IPCC (2021) 
+                     (kg/h)     (kg/h)     (kg/h)     (kg/h)     (kg/h)    
+inlet           Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Total from Inlets     ---        ---        ---        ---        ---        
+Total Carbon Fees from Inlets (Cost/s)     0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Outlet Stream   Count IPCC (1995) IPCC (2007) EPA (2009) IPCC (2016) IPCC (2021) 
+                     (kg/h)     (kg/h)     (kg/h)     (kg/h)     (kg/h)    
+O               Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Total from Outlets     ---        ---        ---        ---        ---        
+Total Carbon Fees from Outlets (Cost/s)     0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+
+
+-------------------------------------------------------------------------------
+All Material Streams (Template Case (Main)+ Templates): Conditions, Composition, K Value, Acid Gas Performance, Package Properties, H2 Conversion, Attachments
+-------------------------------------------------------------------------------
+Material Stream: inlet                            Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (C)            21.11      21.11                             
+Pressure: (kPa)             310.3      310.3                             
+Molar Flow (kgmole/h)       464.6      464.6                             
+Mass Flow (kg/h)            3.629e+004 3.629e+004                        
+Std Ideal Liq VolFlow (m3/h) 41.13      41.13                            
+Molar Enthalpy (kJ/kgmole)  4.972e+04  4.972e+04                         
+Molar Entropy (kJ/kgmole-C) -1.472e+02 -1.472e+02                        
+Heat Flow (kJ/h)            2.310e+07  2.310e+07                         
+Liq VolFlow @Std Cond (m3/h) 41.10      41.10                            
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (kgmole/h)            (kg/h)              (m3/h)              
+Benzene   464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (kgmole/h)            (kg/h)              (m3/h)              
+Benzene   464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Benzene                ---             ---             ---               
+Toluene                ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+Heater: E-100                                                            
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: O                                Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (C)            60.00      60.00                             
+Pressure: (kPa)             275.8      275.8                             
+Molar Flow (kgmole/h)       464.6      464.6                             
+Mass Flow (kg/h)            3.629e+004 3.629e+004                        
+Std Ideal Liq VolFlow (m3/h) 41.13      41.13                            
+Molar Enthalpy (kJ/kgmole)  5.454e+04  5.454e+04                         
+Molar Entropy (kJ/kgmole-C) -1.318e+02 -1.318e+02                        
+Heat Flow (kJ/h)            2.534e+07  2.534e+07                         
+Liq VolFlow @Std Cond (m3/h) 41.10      41.10                            
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (kgmole/h)            (kg/h)              (m3/h)              
+Benzene   464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (kgmole/h)            (kg/h)              (m3/h)              
+Benzene   464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     464.6     1.0000    3.629e+004 1.0000    41.13     1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Benzene                ---             ---             ---               
+Toluene                ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+                        Heater: E-100                                    
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+-------------------------------------------------------------------------------
+All Unit Operations (Template Case (Main)+ Templates):
+-------------------------------------------------------------------------------
+Heater: E-100                                                            
+                                                                         
+                                                                         
+CONNECTIONS                                                              
+                                                                         
+Inlet Stream                                                             
+                                                                         
+STREAM NAME                 FROM UNIT OPERATION                          
+inlet                                                                    
+Outlet Stream                                                            
+                                                                         
+STREAM NAME                 TO UNIT OPERATION                            
+O                                                                        
+Energy Stream                                                            
+                                                                         
+STREAM NAME                 FROM UNIT OPERATION                          
+E                                                                        
+PARAMETERS                                                               
+                                                                         
+Pressure Drop: 34.47 kPa Duty: 2.242e+006 kJ/h   Volume: 0.1000 m3       
+Function: Not Selected  Zones: 1                                         
+User Variables                                                           
+                                                                         
+RATING                                                                   
+                                                                         
+NOZZLE PARAMETERS                                                        
+                                                                         
+Base Elevation Relative to Ground Level 0.0000 m                         
+                           inlet          O                              
+Diameter (m)               5.000e-002     5.000e-002                     
+Elevation (Base) (m)       0.0000         0.0000                         
+Elevation (Ground) (m)     0.0000         0.0000                         
+PERFORMANCE PROFILES                                                     
+                                                                         
+Zone           Pressure      Temperature    Vapour Fraction Enthalpy       
+                (kPa)         (C)                          (kJ/kgmole)   
+Inlet          310.26        21.11          0.0000        49716.57       
+0              275.79        60.00          0.0000        54541.73       
+PERFORMANCE TABLE                                                        
+                                                                         
+Overall Phase                                                            
+                                                                         
+Temperature       Pressure          Heat Flow         Enthalpy           
+ (C)               (kPa)             (kJ/h)            (kJ/kgmole)       
+21.11             310.26            0.00              49716.57           
+25.20             306.82            224161.19         50199.09           
+29.24             303.37            448322.37         50681.60           
+33.24             299.92            672483.56         51164.12           
+37.19             296.47            896644.75         51646.63           
+41.09             293.03            1120805.93        52129.15           
+44.95             289.58            1344967.12        52611.67           
+48.77             286.13            1569128.31        53094.18           
+52.56             282.69            1793289.49        53576.70           
+56.30             279.24            2017450.68        54059.21           
+60.00             275.79            2241611.87        54541.73           
+Vapour Fraction         Vap Phase Mass Frac     Heat of Vap              
+                                                 (kJ/kgmole)             
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+0.0000                  0.0000                  ---                      
+Vapour Phase                                                             
+                                                                         
+Mass Flow   Molecular Wt Density     Mass Sp Heat Viscosity   Thermal Cond 
+ (kg/h)                  (kg/m3)     (kJ/kg-C)   (cP)        (W/m-K)     
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Std Gas Flow Z Factor    Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+ (STD_m3/h)              (kPa)       (C)                                 
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Light Liquid Phase                                                       
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (kg/h)      (kg/m3)     (kJ/kg-C)   (cP)        (W/m-K)     (dyne/cm)   
+36287.38    876.44      1.50        0.64        0.13        28.09        
+36287.38    872.07      1.52        0.60        0.13        27.57        
+36287.38    867.72      1.54        0.57        0.13        27.05        
+36287.38    863.41      1.56        0.54        0.13        26.55        
+36287.38    859.12      1.57        0.51        0.13        26.05        
+36287.38    854.86      1.59        0.49        0.13        25.55        
+36287.38    850.63      1.61        0.47        0.13        25.07        
+36287.38    846.42      1.63        0.44        0.12        24.59        
+36287.38    842.23      1.64        0.42        0.12        24.12        
+36287.38    838.07      1.66        0.41        0.12        23.65        
+36287.38    833.92      1.68        0.39        0.12        23.19        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (kPa)       (C)                                 
+78.11       0.88        4924.39     288.95      0.27        0.22         
+78.11       0.87        4924.39     288.95      0.27        0.22         
+78.11       0.87        4924.39     288.95      0.27        0.22         
+78.11       0.86        4924.39     288.95      0.27        0.22         
+78.11       0.86        4924.39     288.95      0.27        0.22         
+78.11       0.85        4924.39     288.95      0.27        0.22         
+78.11       0.85        4924.39     288.95      0.27        0.22         
+78.11       0.85        4924.39     288.95      0.27        0.22         
+78.11       0.84        4924.39     288.95      0.27        0.22         
+78.11       0.84        4924.39     288.95      0.27        0.22         
+78.11       0.83        4924.39     288.95      0.27        0.22         
+Heavy Liquid Phase                                                       
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (kg/h)      (kg/m3)     (kJ/kg-C)   (cP)        (W/m-K)     (dyne/cm)   
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (kPa)       (C)                                 
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Mixed Liquid Phase                                                       
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (kg/h)      (kg/m3)     (kJ/kg-C)   (cP)        (W/m-K)     (dyne/cm)   
+36287.38    876.44      1.50        0.64        0.13        28.09        
+36287.38    872.07      1.52        0.60        0.13        27.57        
+36287.38    867.72      1.54        0.57        0.13        27.05        
+36287.38    863.41      1.56        0.54        0.13        26.55        
+36287.38    859.12      1.57        0.51        0.13        26.05        
+36287.38    854.86      1.59        0.49        0.13        25.55        
+36287.38    850.63      1.61        0.47        0.13        25.07        
+36287.38    846.42      1.63        0.44        0.12        24.59        
+36287.38    842.23      1.64        0.42        0.12        24.12        
+36287.38    838.07      1.66        0.41        0.12        23.65        
+36287.38    833.92      1.68        0.39        0.12        23.19        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (kPa)       (C)                                 
+78.11       0.88        4924.39     288.95      0.27        0.22         
+78.11       0.87        4924.39     288.95      0.27        0.22         
+78.11       0.87        4924.39     288.95      0.27        0.22         
+78.11       0.86        4924.39     288.95      0.27        0.22         
+78.11       0.86        4924.39     288.95      0.27        0.22         
+78.11       0.85        4924.39     288.95      0.27        0.22         
+78.11       0.85        4924.39     288.95      0.27        0.22         
+78.11       0.85        4924.39     288.95      0.27        0.22         
+78.11       0.84        4924.39     288.95      0.27        0.22         
+78.11       0.84        4924.39     288.95      0.27        0.22         
+78.11       0.83        4924.39     288.95      0.27        0.22         
+
+
+-------------------------------------------------------------------------------
+Aspen Technology Inc. Aspen HYSYS Version 14                              

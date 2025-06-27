@@ -1,0 +1,561 @@
+************************************************************************************
+
+				INPUT SUMMARY
+
+************************************************************************************
+
+
+------------------------------------------------------------------------------------
+FLUID PACKAGE: Basis-1(Peng-Robinson)
+------------------------------------------------------------------------------------
+
+Property Package Type: PengRob
+Component List - 1: Benzene /Toluene /
+
+------------------------------------------------------------------------------------
+FLOWSHEET: Main
+------------------------------------------------------------------------------------
+
+
+Fluid Package: Basis-1
+
+UNIT OPERATION: E-101 (Heat Exchanger)
+   TubeInletStream = Toluene_in_X
+   TubeOutletStream = Toluene_out_X
+   ShellInletStream = Benzene_in_X
+   ShellOutletStream = Benzene_out_X
+   TubeOuterDiameter = 0.787401575 in
+   TubeInnerDiameter = 0.62992126 in
+   TubeThickness = FEMPTY in
+   HCurveName = Toluene_in_X-Toluene_out_X
+   PassInterval = 2
+   HCurveName = Benzene_in_X-Benzene_out_X
+   PassInterval = 2
+   ShellPressureDrop = 5 psi
+   TubePressureDrop = 5 psi
+   MalfunctionType = 1
+   Active = 0
+   MalfunctionType = 2
+   Active = 0
+   MalfunctionType = 3
+   Active = 0
+   MalfunctionType = 4
+   Active = 0
+
+
+STREAM: Benzene_out_X (Material Stream)
+   Temperature = 140 F
+
+
+STREAM: Benzene_in_X (Material Stream)
+   Temperature = 70 F
+   Pressure = 45 psia
+   Mass Flow = 80000 lb/hr
+   Composition Basis (In Mole Fractions ):Benzene = 1/  Toluene = 0/  
+
+
+STREAM: Toluene_in_X (Material Stream)
+   Temperature = 235 F
+   Pressure = 40 psia
+   Composition Basis (In Mass Fractions ):Benzene = 0/  Toluene = 1/  
+
+
+STREAM: Toluene_out_X (Material Stream)
+   Temperature = 150 F
+
+
+
+
+################################################################################
+
+				OUTPUT SUMMARY
+
+################################################################################
+
+
+              INDIAN INSTITUTE OF TECH Case Name: A2Q1.hsc                      
+              Bedford, MA                                                
+              USA               Unit Set: Field                          
+                                                                         
+                                Date/Time: Wed Apr  9 00:14:16 2025      
+-------------------------------------------------------------------------------
+Basis-1 (Fluid Package): Component List
+-------------------------------------------------------------------------------
+Fluid Package: Basis-1                                                   
+                                                                         
+                                                                         
+COMPONENT LIST                                                           
+                                                                         
+Component List - 1 [HYSYS Databanks]                                     
+                                                                         
+COMPONENT        TYPE   MOLECULAR BOILING PT IDEAL LIQ       CRITICAL    
+                        WEIGHT     (F)        DENSITY (lb/ft3)  TEMP (F) 
+Benzene          Pure   78.11     176.2      55.07           552.1       
+Toluene          Pure   92.14     231.2      54.32           605.6       
+(Continued..) Component List - 1 [HYSYS Databanks]                       
+                                                                         
+COMPONENT          CRITICAL PRES  CRITICAL VOL ACENTRICITY  HEAT OF FORM 
+                    (psia)         (ft3/lbmole)               (Btu/lbmole) 
+Benzene            714.2          4.165        0.2150       3.567e+004   
+Toluene            594.7          5.062        0.2596       2.151e+004   
+
+
+-------------------------------------------------------------------------------
+Case (Simulation Case): Mass and Energy Balance, Utility Balance, Process CO2 Emissions
+-------------------------------------------------------------------------------
+Simulation Case: Case                                                    
+                                                                         
+                                                                         
+OVERALL MASS BALANCE                                                     
+                                                                         
+In Stream      Count Mass Flow      Out Stream      Count Mass Flow       
+                     (lb/hr)                             (lb/hr)         
+Toluene_in_X   Yes  5.692e+004     Toluene_out_X   Yes  5.692e+004       
+Benzene_in_X   Yes  8.000e+004     Benzene_out_X   Yes  8.000e+004       
+Total In MassFlow (lb/hr) 1.369e+005 Total Out MassFlow (lb/hr) 1.369e+005 
+Mass Imbalance (lb/hr) 0.0000       Rel Mass Imbalance Pct (%) 0.00      
+OVERALL ENERGY BALANCE                                                   
+                                                                         
+InStream       Count Energy Flow     OutStream      Count Energy Flow     
+                     (Btu/hr)                            (Btu/hr)        
+Toluene_in_X   Yes  7.223e+06       Toluene_out_X  Yes  5.099e+06        
+Benzene_in_X   Yes  2.189e+07       Benzene_out_X  Yes  2.402e+07        
+Total In EnergyFlow (Btu/hr) 2.911e+007 Total Out EnergyFlow (Btu/hr) 2.911e+007 
+Energy Imbalance (Btu/hr) -2.900e-005 Rel Energy Imbalance Pct (%) -0.00  
+OVERALL UTILITY BALANCE                                                  
+                                                                         
+Utility Name         Usage Info  Energy Flow     Mass Flow     Cost      
+                                                                         
+Hot Utility Summary                Cold Utility Summary                  
+                                                                         
+Utility Flow ---                   Utility Flow ---                      
+Utility Cost ---                   Utility Cost ---                      
+Carbon Emiss. ---                  Carbon Emiss. ---                     
+Carbon Fees ---                    Carbon Fees ---                       
+PROCESS CO2 EMISSIONS                                                    
+                                                                         
+Inlet Stream    Count IPCC (1995) IPCC (2007) EPA (2009) IPCC (2016) IPCC (2021) 
+                     (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)   
+Toluene_in_X    Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Benzene_in_X    Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Total from Inlets     ---        ---        ---        ---        ---        
+Total Carbon Fees from Inlets (Cost/s)     0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Outlet Stream   Count IPCC (1995) IPCC (2007) EPA (2009) IPCC (2016) IPCC (2021) 
+                     (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)   
+Toluene_out_X   Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Benzene_out_X   Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Total from Outlets     ---        ---        ---        ---        ---        
+Total Carbon Fees from Outlets (Cost/s)     0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+
+
+-------------------------------------------------------------------------------
+All Material Streams (Case (Main)+ Templates): Conditions, Composition, K Value, Acid Gas Performance, Package Properties, H2 Conversion, Attachments
+-------------------------------------------------------------------------------
+Material Stream: Benzene_out_X                    Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (F)            140.0      140.0                             
+Pressure: (psia)            40.00      40.00                             
+Molar Flow (lbmole/hr)      1024       1024                              
+Mass Flow (lb/hr)           8.000e+004 8.000e+004                        
+Std Ideal Liq VolFlow (barrel/day) 6209       6209                             
+Molar Enthalpy (Btu/lbmole) 2.345e+04  2.345e+04                         
+Molar Entropy (Btu/lbmole-F) -3.148e+01 -3.148e+01                       
+Heat Flow (Btu/hr)          2.402e+07  2.402e+07                         
+Liq VolFlow @Std Cond (barrel/day) 6205       6205                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Benzene                ---             ---             ---               
+Toluene                ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+                        Heat Exchanger: E-101                            
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: Benzene_in_X                     Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (F)            70.00      70.00                             
+Pressure: (psia)            45.00      45.00                             
+Molar Flow (lbmole/hr)      1024       1024                              
+Mass Flow (lb/hr)           8.000e+004 8.000e+004                        
+Std Ideal Liq VolFlow (barrel/day) 6209       6209                             
+Molar Enthalpy (Btu/lbmole) 2.137e+04  2.137e+04                         
+Molar Entropy (Btu/lbmole-F) -3.516e+01 -3.516e+01                       
+Heat Flow (Btu/hr)          2.189e+07  2.189e+07                         
+Liq VolFlow @Std Cond (barrel/day) 6205       6205                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+Toluene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     1024      1.0000    8.000e+004 1.0000    6209      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Benzene                ---             ---             ---               
+Toluene                ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+Heat Exchanger: E-101                                                    
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: Toluene_in_X                     Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (F)            235.0      235.0                             
+Pressure: (psia)            40.00      40.00                             
+Molar Flow (lbmole/hr)      617.8      617.8                             
+Mass Flow (lb/hr)           5.692e+004 5.692e+004                        
+Std Ideal Liq VolFlow (barrel/day) 4480       4480                             
+Molar Enthalpy (Btu/lbmole) 1.169e+04  1.169e+04                         
+Molar Entropy (Btu/lbmole-F) -1.578e+01 -1.578e+01                       
+Heat Flow (Btu/hr)          7.223e+06  7.223e+06                         
+Liq VolFlow @Std Cond (barrel/day) 4463       4463                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Toluene   617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+Total     617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Toluene   617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+Total     617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Benzene                ---             ---             ---               
+Toluene                ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+Heat Exchanger: E-101                                                    
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: Toluene_out_X                    Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (F)            150.0      150.0                             
+Pressure: (psia)            35.00      35.00                             
+Molar Flow (lbmole/hr)      617.8      617.8                             
+Mass Flow (lb/hr)           5.692e+004 5.692e+004                        
+Std Ideal Liq VolFlow (barrel/day) 4480       4480                             
+Molar Enthalpy (Btu/lbmole) 8.253e+03  8.253e+03                         
+Molar Entropy (Btu/lbmole-F) -2.105e+01 -2.105e+01                       
+Heat Flow (Btu/hr)          5.099e+06  5.099e+06                         
+Liq VolFlow @Std Cond (barrel/day) 4463       4463                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Toluene   617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+Total     617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Benzene   0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Toluene   617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+Total     617.8     1.0000    5.692e+004 1.0000    4480      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Benzene                ---             ---             ---               
+Toluene                ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+                        Heat Exchanger: E-101                            
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+-------------------------------------------------------------------------------
+All Unit Operations (Case (Main)+ Templates):
+-------------------------------------------------------------------------------
+Heat Exchanger: E-101                                                    
+                                                                         
+                                                                         
+CONNECTIONS                                                              
+                                                                         
+Tube Side                           Shell Side                           
+                                                                         
+Inlet             Outlet            Inlet             Outlet             
+Name   Toluene_in_X Name   Toluene_out_X Name   Benzene_in_X Name   Benzene_out_X 
+From Op.            To Op.            From Op.            To Op.            
+Op. Type            Op. Type            Op. Type            Op. Type            
+Temp   235.00 F   Temp   150.00 F   Temp   70.00 F    Temp   140.00 F    
+PARAMETERS                                                               
+                                                                         
+Heat Exchanger Model:  Simple End Point                                  
+                                                                         
+Tube Side DeltaP: 5.000 psi Shell Side DeltaP: 5.000 psi Passes: ---             
+UA: 2.856e+004 Btu/F-hr Tolerance: 1.0000e-04                            
+Tube Side Data                      Shell Side Data                      
+Heat Transfer Coeff ---             Heat Transfer Coeff ---              
+Tube Pressure Drop  5.00 psi        Shell Pressure Drop 5.00 psi         
+Fouling             0.00000 F-hr-ft2/Btu Fouling             0.00000 F-hr-ft2/Btu 
+Tube Length         19.69 ft        Shell Passes        1                
+Tube O.D.           0.79 in         Shell Series        1                
+Tube Thickness      0.0787 in       Shell Parallel      1                
+Tube Pitch          1.9685 in       Baffle Type         Single           
+Orientation         Horizontal      Baffle Cut(%Area)   20.00            
+Passes Per Shell    2               Baffle Orientation  Horizontal       
+Tubes Per Shell     160             Spacing             31.4961 in       
+Layout Angle        Triangular (30 degrees) Diameter            29.0964 in      
+TEMA Type                        A E L Area                649.26 ft2      
+SPECS                                                                    
+                                                                         
+               Spec Value    Curr Value     Rel Error     Active Estimate 
+E-101 Heat Balance 0.0000 Btu/hr -2.900e-005 Btu/hr -1.365e-011   On     Off    
+E-101 UA       ---           2.856e+004 Btu/F-hr ---           On     Off    
+Detailed Specifications                                                  
+                                                                         
+E-101 Heat Balance                                                       
+Type: Duty              Pass: Error             Spec Value: 0.0000 Btu/hr 
+E-101 UA                                                                 
+Type: UA                Pass: Overall           Spec Value: ---          
+User Variables                                                           
+                                                                         
+RATING                                                                   
+                                                                         
+Sizing                                                                   
+                                                                         
+Overall Data                                                             
+Configuration                                                            
+# of Shells in Series 1 Tube Passes per Shell 2 Elevation (Base) 0.0000 ft 
+# of Shells in Parallel 1 Exchange Orientation Horizontal First Tube Pass Flow Direction Counter 
+TEMA Type:                 A              E              L               
+Calculated Information                                                   
+Shell HT Coeff ---                  Tube HT Coeff ---                    
+Overall U 43.99 Btu/hr-ft2-F        Overall UA 2.856e+004 Btu/F-hr       
+Shell DP 5.000 psi                  Tube DP 5.000 psi                    
+Shell Vol per Shell 80.24 ft3       Tube Vol per Shell 6.816 ft3         
+HT Area per Shell 649.3 ft2                                              
+Shell Data                                                               
+Shell and Tube Bundle                                                    
+Shell Diameter 29.10    Tube Pitch 1.969        Shell Fouling 0.0000     
+ (in)                    (in)                    (F-hr-ft2/Btu)          
+# of Tubes per Shell 160 Tube Layout Angle Triangular (30 degrees)       
+Shell Baffles                                                            
+Shell Baffle Type Single            Shell Baffle Orientation Horizontal  
+Baffle Cut (%Area) 20.00            Baffle Spacing 31.50 in              
+Tube Data                                                                
+Dimensions                                                               
+OD 0.7874         ID 0.6299         Tube Thickness 7.874e-002 Tube Length 19.69 
+ (in)              (in)              (in)              (ft)              
+Tube Properties                                                          
+Tube Fouling 0.0000 Thermal Cond. 26.00 Wall Cp ---       Wall Density ---  
+ (F-hr-ft2/Btu)    (Btu/hr-ft-F)     (Btu/lb-F)        (lb/ft3)          
+Nozzle Parameters                                                        
+                                                                         
+Base Elevation Relative to Ground Level 0.0000 ft                        
+                           Toluene_in_X   Benzene_in_X   Toluene_out_X   
+Diameter (ft)              0.1640         0.1640         0.1640          
+Elevation (Base) (ft)      0.0000         0.0000         0.0000          
+Elevation (Ground) (ft)    0.0000         0.0000         0.0000          
+Elevation (% of Height) (%) 0.00           0.00           0.00           
+                           Benzene_out_X                                 
+Diameter (ft)              0.1640                                        
+Elevation (Base) (ft)      0.0000                                        
+Elevation (Ground) (ft)    0.0000                                        
+Elevation (% of Height) (%) 0.00                                         
+DETAILS                                                                  
+                                                                         
+Overall/Detailed Performance                                             
+                                                                         
+Duty: 2.125e+06 Btu/hr              UA Curv. Error: 0.00e-01 Btu/F-hr    
+Heat Leak: 0.000e-01 Btu/hr         Hot Pinch Temp: 150.0 F              
+Heat Loss: 0.000e-01 Btu/hr         Cold Pinch Temp: 70.00 F             
+UA: 2.856e+04 Btu/F-hr              Ft Factor: ---                       
+Min. Approach: 80.00 F              Uncorrected Lmtd: 87.29 F            
+Lmtd: 74.39 F                                                            
+TABLES                                                                   
+                                                                         
+Shell Side - Overall Phase                                               
+                                                                         
+Temperature       Pressure          Heat Flow         Enthalpy           
+ (F)               (psia)            (Btu/hr)          (Btu/lbmole)      
+70.00             45.00             0.00              21374.28           
+140.00            40.00             2124637.61        23448.72           
+UA                Molar Vap Frac    Mass Vap Frac     Heat of Vap.       
+ (Btu/F-hr)                                            (Btu/lbmole)      
+0.00              0.0000            0.0000            ---                
+0.00              0.0000            0.0000            ---                
+Shell Side - Vapour Phase                                                
+                                                                         
+Mass Flow   Molecular Wt Density     Mass Sp Heat Viscosity   Thermal Cond 
+ (lb/hr)                 (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F) 
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Std Gas Flow Z Factor    Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+ (MMSCFD)                (psia)      (F)                                 
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Shell Side - Light Liquid Phase                                          
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (lb/hr)     (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F)  (dyne/cm)  
+80000.00    54.71       0.36        0.64        0.08        28.09        
+80000.00    52.06       0.40        0.39        0.07        23.19        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (psia)      (F)                                 
+78.11       0.88        714.22      552.11      0.27        0.22         
+78.11       0.83        714.22      552.11      0.27        0.22         
+Shell Side - Heavy Liquid Phase                                          
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (lb/hr)     (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F)  (dyne/cm)  
+80000.00    54.71       0.36        0.64        0.08        28.09        
+80000.00    52.06       0.40        0.39        0.07        23.19        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (psia)      (F)                                 
+78.11       0.88        714.22      552.11      0.27        0.22         
+78.11       0.83        714.22      552.11      0.27        0.22         
+Shell Side - Mixed Liquid                                                
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (lb/hr)     (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F)  (dyne/cm)  
+80000.00    54.71       0.36        0.64        0.08        28.09        
+80000.00    52.06       0.40        0.39        0.07        23.19        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (psia)      (F)                                 
+78.11       0.88        714.22      552.11      0.27        0.22         
+78.11       0.83        714.22      552.11      0.27        0.22         
+Tube Side - Overall Phase                                                
+                                                                         
+Temperature       Pressure          Heat Flow         Enthalpy           
+ (F)               (psia)            (Btu/hr)          (Btu/lbmole)      
+150.00            35.00             0.00              8253.26            
+235.00            40.00             2124637.61        11692.43           
+UA                Molar Vap Frac    Mass Vap Frac     Heat of Vap.       
+ (Btu/F-hr)                                            (Btu/lbmole)      
+0.00              0.0000            0.0000            ---                
+0.00              0.0000            0.0000            ---                
+Tube Side - Vapour Phase                                                 
+                                                                         
+Mass Flow   Molecular Wt Density     Mass Sp Heat Viscosity   Thermal Cond 
+ (lb/hr)                 (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F) 
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Std Gas Flow Z Factor    Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+ (MMSCFD)                (psia)      (F)                                 
+---         ---         ---         ---         ---         ---          
+---         ---         ---         ---         ---         ---          
+Tube Side - Light Liquid Phase                                           
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (lb/hr)     (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F)  (dyne/cm)  
+56922.32    51.57       0.41        0.36        0.07        23.26        
+56922.32    48.61       0.46        0.24        0.07        18.07        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (psia)      (F)                                 
+92.14       0.83        594.66      605.57      0.27        0.26         
+92.14       0.78        594.66      605.57      0.27        0.26         
+Tube Side - Heavy Liquid Phase                                           
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (lb/hr)     (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F)  (dyne/cm)  
+56922.32    51.57       0.41        0.36        0.07        23.26        
+56922.32    48.61       0.46        0.24        0.07        18.07        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (psia)      (F)                                 
+92.14       0.83        594.66      605.57      0.27        0.26         
+92.14       0.78        594.66      605.57      0.27        0.26         
+Tube Side - Mixed Liquid                                                 
+                                                                         
+Mass Flow   Density     Mass Sp Heat Viscosity   Thermal Cond Surface Tens 
+ (lb/hr)     (lb/ft3)    (Btu/lb-F)  (cP)        (Btu/hr-ft-F)  (dyne/cm)  
+56922.32    51.57       0.41        0.36        0.07        23.26        
+56922.32    48.61       0.46        0.24        0.07        18.07        
+Molecular Wt Sp Gravity  Pseudo Pc   Pseudo Tc   Pseudo Zc   Pseudo Omega 
+                         (psia)      (F)                                 
+92.14       0.83        594.66      605.57      0.27        0.26         
+92.14       0.78        594.66      605.57      0.27        0.26         
+HTFS                                                                     
+                                                                         
+                                                                         
+Exchanger Design and Rating                                              
+                                                                         
+                                                                         
+
+
+-------------------------------------------------------------------------------
+Aspen Technology Inc. Aspen HYSYS Version 14                              

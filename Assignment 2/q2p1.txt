@@ -1,0 +1,372 @@
+************************************************************************************
+
+				INPUT SUMMARY
+
+************************************************************************************
+
+
+------------------------------------------------------------------------------------
+FLUID PACKAGE: Basis-1(Peng-Robinson)
+------------------------------------------------------------------------------------
+
+Property Package Type: PengRob
+Component List - 1: Methanol /H2O /
+
+------------------------------------------------------------------------------------
+FLOWSHEET: Main
+------------------------------------------------------------------------------------
+
+
+Fluid Package: Basis-1
+
+UNIT OPERATION: Plate-100 (Plate Exchanger)
+   Hot_Side_PressureDrop = 5 psi
+   Cold_Side_PressureDrop = 5 psi
+   HCurveName = water_in-water_out
+   PassInterval = 1
+   HCurveName = methanol_in-methanol_out
+   PassInterval = 1
+   ModelType = 0
+
+
+STREAM: water_in (Material Stream)
+   Temperature = 500 F
+   Pressure = 100 psia
+   Mass Flow = 26000 lb/hr
+   Composition Basis (In Mole Fractions ):Methanol = 0/  H2O = 1/  
+
+
+STREAM: water_out (Material Stream)
+   Temperature = 422.4 F
+
+
+STREAM: methanol_out (Material Stream)
+
+
+STREAM: methanol_in (Material Stream)
+   Temperature = 60 F
+   Pressure = 100 psia
+   Mass Flow = 90000 lb/hr
+   Composition Basis (In Mole Fractions ):Methanol = 1/  H2O = 0/  
+
+
+
+
+################################################################################
+
+				OUTPUT SUMMARY
+
+################################################################################
+
+
+              INDIAN INSTITUTE OF TECH Case Name: 3.tpl                         
+              Bedford, MA                                                
+              USA               Unit Set: Field                          
+                                                                         
+                                Date/Time: Wed Apr  9 00:32:09 2025      
+-------------------------------------------------------------------------------
+Basis-1 (Fluid Package): Component List
+-------------------------------------------------------------------------------
+Fluid Package: Basis-1                                                   
+                                                                         
+                                                                         
+COMPONENT LIST                                                           
+                                                                         
+Component List - 1 [HYSYS Databanks]                                     
+                                                                         
+COMPONENT        TYPE   MOLECULAR BOILING PT IDEAL LIQ       CRITICAL    
+                        WEIGHT     (F)        DENSITY (lb/ft3)  TEMP (F) 
+Methanol         Pure   32.04     148.4      49.68           463.0       
+H2O              Pure   18.02     212.0      62.30           705.5       
+(Continued..) Component List - 1 [HYSYS Databanks]                       
+                                                                         
+COMPONENT          CRITICAL PRES  CRITICAL VOL ACENTRICITY  HEAT OF FORM 
+                    (psia)         (ft3/lbmole)               (Btu/lbmole) 
+Methanol           1070           2.034        0.5570       -8.654e+004  
+H2O                3208           0.9147       0.3440       -1.040e+005  
+
+
+-------------------------------------------------------------------------------
+Template Case (Simulation Case): Mass and Energy Balance, Utility Balance, Process CO2 Emissions
+-------------------------------------------------------------------------------
+Simulation Case: Template Case                                           
+                                                                         
+                                                                         
+OVERALL MASS BALANCE                                                     
+                                                                         
+In Stream      Count Mass Flow      Out Stream      Count Mass Flow       
+                     (lb/hr)                             (lb/hr)         
+water_in       Yes  2.600e+004     water_out       Yes  2.600e+004       
+methanol_in    Yes  9.000e+004     methanol_out    Yes  9.000e+004       
+Total In MassFlow (lb/hr) 1.160e+005 Total Out MassFlow (lb/hr) 1.160e+005 
+Mass Imbalance (lb/hr) 0.0000       Rel Mass Imbalance Pct (%) 0.00      
+OVERALL ENERGY BALANCE                                                   
+                                                                         
+InStream       Count Energy Flow     OutStream      Count Energy Flow     
+                     (Btu/hr)                            (Btu/hr)        
+water_in       Yes  -1.452e+08      water_out      Yes  -1.461e+08       
+methanol_in    Yes  -2.933e+08      methanol_out   Yes  -2.924e+08       
+Total In EnergyFlow (Btu/hr) -4.385e+008 Total Out EnergyFlow (Btu/hr) -4.385e+008 
+Energy Imbalance (Btu/hr) 1.265e-004 Rel Energy Imbalance Pct (%) -0.00  
+OVERALL UTILITY BALANCE                                                  
+                                                                         
+Utility Name         Usage Info  Energy Flow     Mass Flow     Cost      
+                                                                         
+Hot Utility Summary                Cold Utility Summary                  
+                                                                         
+Utility Flow ---                   Utility Flow ---                      
+Utility Cost ---                   Utility Cost ---                      
+Carbon Emiss. ---                  Carbon Emiss. ---                     
+Carbon Fees ---                    Carbon Fees ---                       
+PROCESS CO2 EMISSIONS                                                    
+                                                                         
+Inlet Stream    Count IPCC (1995) IPCC (2007) EPA (2009) IPCC (2016) IPCC (2021) 
+                     (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)   
+water_in        Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+methanol_in     Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Total from Inlets     ---        ---        ---        ---        ---        
+Total Carbon Fees from Inlets (Cost/s)     0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Outlet Stream   Count IPCC (1995) IPCC (2007) EPA (2009) IPCC (2016) IPCC (2021) 
+                     (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)    (lb/hr)   
+water_out       Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+methanol_out    Yes 0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+Total from Outlets     ---        ---        ---        ---        ---        
+Total Carbon Fees from Outlets (Cost/s)     0.000e-01  0.000e-01  0.000e-01  0.000e-01  0.000e-01  
+
+
+-------------------------------------------------------------------------------
+All Material Streams (Template Case (Main)+ Templates): Conditions, Composition, K Value, Acid Gas Performance, Package Properties, H2 Conversion, Attachments
+-------------------------------------------------------------------------------
+Material Stream: water_in                         Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    VAPOUR PH.                        
+Vapour / Phase Fraction     1.0000     1.0000                            
+Temperature: (F)            500.0      500.0                             
+Pressure: (psia)            100.0      100.0                             
+Molar Flow (lbmole/hr)      1443       1443                              
+Mass Flow (lb/hr)           2.600e+004 2.600e+004                        
+Std Ideal Liq VolFlow (barrel/day) 1784       1784                             
+Molar Enthalpy (Btu/lbmole) -1.006e+05 -1.006e+05                        
+Molar Entropy (Btu/lbmole-F) 4.237e+01  4.237e+01                        
+Heat Flow (Btu/hr)          -1.452e+08 -1.452e+08                        
+Liq VolFlow @Std Cond (barrel/day) 1754       1754                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 1.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+H2O       1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+Total     1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+Vapour Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+H2O       1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+Total     1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Methanol               ---             ---             ---               
+H2O                    ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+Plate Exchanger: Plate-100                                                 
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: water_out                        Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    VAPOUR PH.                        
+Vapour / Phase Fraction     1.0000     1.0000                            
+Temperature: (F)            422.4      422.4                             
+Pressure: (psia)            95.00      95.00                             
+Molar Flow (lbmole/hr)      1443       1443                              
+Mass Flow (lb/hr)           2.600e+004 2.600e+004                        
+Std Ideal Liq VolFlow (barrel/day) 1784       1784                             
+Molar Enthalpy (Btu/lbmole) -1.013e+05 -1.013e+05                        
+Molar Entropy (Btu/lbmole-F) 4.174e+01  4.174e+01                        
+Heat Flow (Btu/hr)          -1.461e+08 -1.461e+08                        
+Liq VolFlow @Std Cond (barrel/day) 1754       1754                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 1.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+H2O       1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+Total     1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+Vapour Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+H2O       1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+Total     1443      1.0000    2.600e+004 1.0000    1784      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Methanol               ---             ---             ---               
+H2O                    ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+                        Plate Exchanger: Plate-100                         
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: methanol_out                     Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (F)            72.90      72.90                             
+Pressure: (psia)            95.00      95.00                             
+Molar Flow (lbmole/hr)      2809       2809                              
+Mass Flow (lb/hr)           9.000e+004 9.000e+004                        
+Std Ideal Liq VolFlow (barrel/day) 7745       7745                             
+Molar Enthalpy (Btu/lbmole) -1.041e+05 -1.041e+05                        
+Molar Entropy (Btu/lbmole-F) 3.712e+00  3.712e+00                        
+Heat Flow (Btu/hr)          -2.924e+08 -2.924e+08                        
+Liq VolFlow @Std Cond (barrel/day) 7738       7738                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+H2O       0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+H2O       0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Methanol               ---             ---             ---               
+H2O                    ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+                        Plate Exchanger: Plate-100                         
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+Material Stream: methanol_in                      Fluid Package: Basis-1 
+                                                                         
+                                                  Property Package: Peng-Robinson 
+CONDITIONS                                                               
+                                                                         
+                            OVERALL    LIQUID PH.                        
+Vapour / Phase Fraction     0.0000     1.0000                            
+Temperature: (F)            60.00      60.00                             
+Pressure: (psia)            100.0      100.0                             
+Molar Flow (lbmole/hr)      2809       2809                              
+Mass Flow (lb/hr)           9.000e+004 9.000e+004                        
+Std Ideal Liq VolFlow (barrel/day) 7745       7745                             
+Molar Enthalpy (Btu/lbmole) -1.044e+05 -1.044e+05                        
+Molar Entropy (Btu/lbmole-F) 3.059e+00  3.059e+00                        
+Heat Flow (Btu/hr)          -2.933e+08 -2.933e+08                        
+Liq VolFlow @Std Cond (barrel/day) 7738       7738                             
+COMPOSITION                                                              
+                                                                         
+Overall Phase                                            Vapour Fraction 0.0000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+H2O       0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+Liquid Phase                                             Phase Fraction 1.000 
+                                                                         
+COMPONENTS MOLE FLOW MOLE FRAC MASS FLOW MASS FRAC LIQVOL FLOW LIQVOL FRAC 
+           (lbmole/hr)            (lb/hr)             (barrel/day)           
+Methanol  2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+H2O       0.0000    0.0000    0.0000    0.0000    0.0000    0.0000       
+Total     2809      1.0000    9.000e+004 1.0000    7745      1.0000      
+K VALUE                                                                  
+                                                                         
+COMPONENTS             MIXED           LIGHT           HEAVY             
+Methanol               ---             ---             ---               
+H2O                    ---             ---             ---               
+UNIT OPERATIONS                                                          
+                                                                         
+FEED TO                 PRODUCT FROM            LOGICAL CONNECTION       
+Plate Exchanger: Plate-100                                                 
+UTILITIES                                                                
+                                                                         
+( No utilities reference this stream )                                   
+PROCESS UTILITY                                                          
+                                                                         
+                                                                         
+
+
+-------------------------------------------------------------------------------
+All Unit Operations (Template Case (Main)+ Templates):
+-------------------------------------------------------------------------------
+Plate Exchanger: Plate-100                                               
+                                                                         
+                                                                         
+CONNECTIONS                                                              
+                                                                         
+Hot Side                            Cold Side                            
+                                                                         
+Inlet             Outlet            Inlet             Outlet             
+Name   water_in   Name   water_out  Name   methanol_in Name   methanol_out 
+From Op.            To Op.            From Op.            To Op.            
+Op. Type            Op. Type            Op. Type            Op. Type            
+Temp   500.00 F   Temp   422.40 F   Temp   60.00 F    Temp   72.90 F     
+PARAMETERS                                                               
+                                                                         
+Heat Exchanger Model:  Simple End Point                                  
+                                                                         
+HotSide DeltaP: 5.000 psi           ColdSide DeltaP: 5.000 psi           
+UA: 2446 Btu/F-hr       Heat Transfer Coefficient: 2.2727e+00 Btu/hr-ft2-F Area: 1.0764e+03 ft2    
+User Variables                                                           
+                                                                         
+EDR Plate                                                                
+                                                                         
+Duty: ---      Area: ---     MTD: ---       HTCClean: --- HTCDirty: ---  
+Hot Side                            Cold Side                            
+                                                                         
+Stream Name    water_in              Stream Name    methanol_in           
+Allowable Pressure Drop ---                   Allowable Pressure Drop ---                   
+Calculated Pressure Drop ---                   Calculated Pressure Drop ---                   
+Port Velocity  ---                   Port Velocity  ---                   
+Plate Velocity ---                   Plate Velocity ---                   
+
+
+-------------------------------------------------------------------------------
+Aspen Technology Inc. Aspen HYSYS Version 14                              
