@@ -1,0 +1,10 @@
+INPUT: q3.inm
+MODNAME: apmain
+RUNID: q3
+NEW_RUNID: q3
+OLD_RUNID: q3
+PDF: q3.appdf
+USERNAME: RDRL
+XMOD: C:\Program Files\AspenTech\Aspen Plus V14.0\Engine\xeq\apmain
+SPONLY:
+DBCONN: _5845hlm.ads
